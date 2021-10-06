@@ -106,6 +106,23 @@ if __name__ == '__main__':
     plt.ylabel("Power Price Deviation")
     plt.show()
 
+    spread = p - 12*g - 5
+    spread_mean = [np.mean(row) for row in spread]
+    plt.plot(spread_mean)
+    plt.title("Spark Spread Mean Over Two Years")
+    plt.xlabel("Week")
+    plt.ylabel("Price Spread")
+    plt.show()
+
+    spread_std = [np.std(row) for row in spread]
+    plt.plot(spread_std)
+    plt.title("Spark Spread Standard Deviation Over Two Years")
+    plt.xlabel("Week")
+    plt.ylabel("Price Spread")
+    plt.show()
+
+
+
 # # 0: close; 1:open
 # status = np.zeros((48*T + 1, N))
 # status[0] = 0
