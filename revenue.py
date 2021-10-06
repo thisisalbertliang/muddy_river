@@ -118,7 +118,7 @@ if __name__ == '__main__':
     plt.plot(spread_std)
     plt.title("Spark Spread Standard Deviation Over Two Years")
     plt.xlabel("Week")
-    plt.ylabel("Price Spread")
+    plt.ylabel("Price Spread Deviations")
     plt.show()
 
 
